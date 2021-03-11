@@ -77,6 +77,10 @@ while keep_going:
         # line_str = [JUNK, JUNK, ID, SAMPLE_NUM, BATM, TEMP, PH, COND, ORP, eop]
 
         line_str = line_str.split('#')
+	
+        if len(line_str) > 11:
+            print('ERROR DE FORMATO')
+            continue	
         # Descartamos los dos primeros campos y el ultimo (JUNK)
         line_str = line_str[2:-1]
 
