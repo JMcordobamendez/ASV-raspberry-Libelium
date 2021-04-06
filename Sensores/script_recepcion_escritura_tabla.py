@@ -105,9 +105,12 @@ def Basedatos (Datos):
 
         tramas = str(line)  # Pasamos a string
         tramas = tramas.split('<=>')  # Dividimos entre tramas
+        print(tramas)
 
-        #if len(tramas) < 2:
-         #   continue
+        if len(tramas) < 2 or len(tramas) > 2: #El mensaje la primera vez no se recibe bien
+            print(tramas)
+            return
+            '''nada'''
 
 
         trama = tramas[1]  # Cogemos la primera trama del buffer
@@ -120,8 +123,9 @@ def Basedatos (Datos):
 
         line_str = trama.split('#')
 
-        if len(line_str) > 11:
+        if len(line_str) > 11 or len(line_str) < 10: #algunas veces el mensaje no se recibe entero
             print('ERROR DE FORMATO')
+            return
             #continue
 
             # Descartamos los dos primeros campos y el ultimo (JUNK)
