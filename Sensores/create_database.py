@@ -3,7 +3,7 @@ import sqlite3
 
 #nos conectamos con la base de datos llamada prueba1.db
 #si no existe crea una con ese nombre en el mismo directorio
-conectar=sqlite3.connect("prueba1.db")
+conectar=sqlite3.connect("LOCAL_DATABASE.db")
 
 #Creamos un cursor que nos permitira interactuar con la base de datos
 cursor=conectar.cursor()
@@ -16,6 +16,8 @@ cursor.execute("""CREATE TABLE sensor(
                 TEMP real,
                 PH real,
                 DO real,
+                LATITUD real,
+                LONGITUD real,
                 COND real,
                 ORP real,
                 DATE text
