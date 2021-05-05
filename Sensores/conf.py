@@ -19,18 +19,18 @@ sub.run(["sudo cp text.txt /etc/udev/rules.d/99-usbserial.rules"],shell = True) 
 
 #Script que modifija al ardurover, descomentar si se quiere usar.
 #script2=open('text.txt','w') #borra lo escrito anteriormente en él
-#script2.write('''
+#script2.write(
 #/etc/default/ardurover
 # Default settings for ArduPilot for Linux.
 # The file is sourced by systemd from ardurover.service
 
 #TELEM1="-A udp:192.168.137.1:14550"
-TELEM1="-A udp:169.254.207.222:14550"
-TELEM2="-B /dev/ttyAMA0"
+#TELEM1="-A udp:169.254.207.222:14550"
+#TELEM2="-B /dev/ttyAMA0"
 #TELEM3="-C /dev/ttyUSB0"
-TELEM3="-C /dev/ttyUSBPort0"
+#TELEM3="-C /dev/ttyUSBPort0"
 # Options to pass to ArduPilot
-ARDUPILOT_OPTS="$TELEM1 $TELEM2 $TELEM3"
+#ARDUPILOT_OPTS="$TELEM1 $TELEM2 $TELEM3"
 
                           #    # ###### #      #####
                           #    # #      #      #    #
@@ -48,7 +48,7 @@ ARDUPILOT_OPTS="$TELEM1 $TELEM2 $TELEM3"
 # -B or -E is used to specify non default GPS
 
 # Type "emlidtool ardupilot" for further help
-'''
+#'''
 #)
 #script2.close()
 #sub.run(["sudo cp text.txt /etc/default/ardurover"],shell = True) #modifica el script de la configuración con lo escrito anteriormente
