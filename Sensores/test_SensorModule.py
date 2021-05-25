@@ -17,7 +17,7 @@ if __name__ == '__main__':
 
     # Creamos el objeto de modulo de sensores #
     modulo_de_sensores = WaterQualityModule(database_name = 'LOCAL_DATABASE.db',
-                                            USB_string = 'USB1',
+                                            USB_string = 'USBPort1',
                                             timeout = 6,
                                             baudrate = 115200)
 

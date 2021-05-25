@@ -16,6 +16,7 @@ script1.write("#Zigbee Smart Water Ions\n")
 script1.write('ACTION=="add",ENV{ID_BUS}=="usb",ENV{ID_SERIAL_SHORT}=='+ID3+',SYMLINK+="ttyUSBPort2"\n')
 script1.close()
 sub.run(["sudo cp text.txt /etc/udev/rules.d/99-usbserial.rules"],shell = True) #modifica el script de la configuración con lo escrito anteriormente
+sub.run(["rm text.txt"],shell = True) #Elimina el .txt creado para poder modificar la configuración
 
 #Script que modifija al ardurover, descomentar si se quiere usar.
 #script2=open('text.txt','w') #borra lo escrito anteriormente en él
