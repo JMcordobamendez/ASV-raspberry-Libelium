@@ -3,7 +3,7 @@ pkg load io; %importamos la librería io
 close all;
 clc;
 %importamos los datos de la pruba realizada
-data = csv2cell("data.csv",",");#data.csv es el .csv de prueba
+data = csv2cell("data_TEMP.csv",",");#data.csv es el .csv de prueba
 %nos quedamos con los números y creo una matriz
 num = cell2mat(data(2:end,2:10));
 %nos quedamos con el instante en el que se tomaron los datos

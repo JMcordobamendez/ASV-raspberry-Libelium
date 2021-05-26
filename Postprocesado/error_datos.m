@@ -24,7 +24,7 @@ val = zeros(11,3); % Media | desviación estándar | asimetría
 %Pintamos un histograma con la dristribución de los datos, de esta forma si se 
 %selecciona un rango adecuado podemos visualizar el error y ver si su 
 %distribución es normal
-ncampos=20; %modifica la resolución del histograma
+ncampos=10; %modifica la resolución del histograma
 fprintf("         Media         S.T.D.       Asimetría\n");
 for i = 3:(length(fields)-2)
   if i == 6 || i == 7 %que no seleccione la latitud y longitud

@@ -1,0 +1,5 @@
+#--Temperatura
+# .csv con los datos almacenados
+data_TEMP.csv
+#Rango analizado
+Temp = [188 final];
