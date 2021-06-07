@@ -5,11 +5,11 @@ close all; clc;
 %Se puede cambiar manualmente
 pkg load statistics;
 final = length(num(:,3));
-Temp = [1 final];
+Temp = [188 final];
 Ph = [1 final];
-O2 = [1 final];
+O2 = [146 final];
 Cond = [1 final];
-Orp = [1 final];
+Orp = [155 301];
 %Creamos una matriz con esos rangos (no tocar)
 rango = zeros(11,2);
 rango(3,:) = Temp;

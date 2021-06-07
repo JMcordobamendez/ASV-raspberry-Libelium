@@ -3,3 +3,28 @@
 data_TEMP.csv
 #Rango analizado
 Temp = [188 final];
+
+#--Conductividad
+# .csv con los datos almacenados
+data_all.csv
+#Rango analizado
+Cond = [1 final];
+
+#--O2
+# .csv con los datos almacenados
+data_01_06_2021.csv
+#Rango analizado
+O2 = [146 final];
+
+#--ORP
+# .csv con los datos almacenados
+data_01_06_2021.csv
+#Rango analizado
+Orp = [155 301];
+
+#--pH
+# .csv con los datos almacenados
+data_all.csv
+#Rango analizado
+Ph = [1 final];
+
